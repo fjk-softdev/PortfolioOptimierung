@@ -1,5 +1,5 @@
-import org.platanios.tensorflow.api.tensors._
-import org.platanios.tensorflow.api.Tensor
+import cern.colt.matrix.{DoubleFactory2D, DoubleMatrix2D}
+import cern.colt.matrix.{DoubleFactory1D,DoubleMatrix1D}
 
 
 trait PortOptiMode {
@@ -7,16 +7,13 @@ trait PortOptiMode {
   // using risk free asset should also be considered
 
   // vorschlag: tensorflow benutzen. ansonsten muss man in vielen punkten auf java uebergehen...
-  val covarianceMatrix = Tensor[Double](Tensor[Double](0.8,0.5),Tensor[Double](0.5,1.0))
-  val returns = Tensor[Double](0.4,0.6)
+  val covMatrix = DoubleFactory2D.dense.make(2,2)
+  covMatrix.set(0,0,0.8)
+  covMatrix.set(0,1,0.5)
+  covMatrix.set(1,0,0.5)
+  covMatrix.set(1,1,0.4)
 
-  def getReturns: Tensor[Double] = {
-    returns
-  }
-
-  def getCovMatrix : Tensor[Double] = {
-    covarianceMatrix
-  }
-
-
+  val returns = DoubleFactory1D.dense.make(2)
+  returns.set(0,0.8)
+  returns.set(1,0.4)
 }

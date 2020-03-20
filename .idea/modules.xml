@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PortfolioOptimierung.iml" filepath="$PROJECT_DIR$/.idea/modules/PortfolioOptimierung.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PortfolioOptimierung-build.iml" filepath="$PROJECT_DIR$/.idea/modules/PortfolioOptimierung-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/portfoliooptimierung.iml" filepath="$PROJECT_DIR$/.idea/modules/portfoliooptimierung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/portfoliooptimierung-build.iml" filepath="$PROJECT_DIR$/.idea/modules/portfoliooptimierung-build.iml" />
     </modules>
   </component>
 </project>
